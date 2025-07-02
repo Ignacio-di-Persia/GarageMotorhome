@@ -18,7 +18,7 @@ public class BaseDeDatos {
     }
     
     //Carga de datos y sus relaciones
-    private void cargaSociosVehiculosYGarages(){
+    private void cargaSociosVehiculosYGarages(){ 
         //Primer Socio
         Socios s1 = new Socios("Ana", 11122333, 99887766, new Domicilios("Avellaneda", 456, "Oeste"));
         Vehiculo v1 = new Vehiculo("ABC123", "Volkswagen", "Motorhome", 7.2, 3.8, true);
@@ -54,7 +54,7 @@ public class BaseDeDatos {
         listaSocios.add(s3);
     }
     
-    public void cargaEmpleadosZonasGarages(){
+    private void cargaEmpleadosZonasGarages(){
         // Hardcoded empleados
         Empleados e1 = new Empleados("Mecánica", "Luis", 13579135, 33445566, new Domicilios("San Martín", 789, "Sur"));
         Zonas z1 = new Zonas("A");
@@ -75,7 +75,7 @@ public class BaseDeDatos {
         listaEmpleados.add(e2);
     }
     
-    public void cargarAdministradores(){
+    private void cargarAdministradores(){
         Domicilios d1 = new Domicilios("Mitre", 123, "Centro");
         Domicilios d2 = new Domicilios("Rivadavia", 456, "Norte");
         Domicilios d3 = new Domicilios("San Juan", 789, "Oeste");

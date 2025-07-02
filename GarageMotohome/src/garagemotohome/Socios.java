@@ -79,7 +79,6 @@ public class Socios extends Personas {
     public int crearCodigo() {
         String numero;
         numero = String.valueOf(prefijoSocio) +String.valueOf(contador);
-        System.out.println(numero);
         return Integer.parseInt(numero);
     }
 

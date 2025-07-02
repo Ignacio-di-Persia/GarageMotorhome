@@ -3,7 +3,7 @@ package garagemotohome;
 
 import java.util.Scanner;
 
-public class MenuSocio {
+public class MenuSocio implements Menu{
     
     
     public void mostrarOpciones(Socios socio) {
@@ -11,12 +11,7 @@ public class MenuSocio {
         int opcion;
 
         do {
-            System.out.println("\n----- MENU SOCIO -----");
-            System.out.println("1. Ver información del socio");
-            System.out.println("2. Ver vehículos y estado");
-            System.out.println("3. Ver garages comprados");
-            System.out.println("4. Volver al menú principal");
-            System.out.print("Ingrese una opción: ");
+            Menu();
             opcion = scanner.nextInt();
 
             switch (opcion) {
@@ -55,6 +50,16 @@ public class MenuSocio {
             }
 
         } while (opcion != 4);
+    }
+
+    @Override
+    public void Menu() {
+        System.out.println("\n----- MENU SOCIO -----");
+        System.out.println("1. Ver información del socio");
+        System.out.println("2. Ver vehículos y estado");
+        System.out.println("3. Ver garages comprados");
+        System.out.println("4. Volver al menú principal");
+        System.out.print("Ingrese una opción: ");
     }
 }
 

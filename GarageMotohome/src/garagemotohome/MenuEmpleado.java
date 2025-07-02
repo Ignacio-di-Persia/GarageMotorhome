@@ -3,17 +3,13 @@ package garagemotohome;
 
 import java.util.Scanner;
 
-public class MenuEmpleado {
+public class MenuEmpleado implements Menu{
     public void mostrarOpciones(Empleados empleado) {
         Scanner scanner = new Scanner(System.in);
         int opcion;
 
         do {
-            System.out.println("\n----- MENU EMPLEADO -----");
-            System.out.println("1. Ver información del empleado");
-            System.out.println("2. Ver zonas que le pretenecen");
-            System.out.println("3. Volver al menú principal");
-            System.out.print("Ingrese una opción: ");
+            Menu();
             opcion = scanner.nextInt();
 
             switch (opcion) {
@@ -39,5 +35,14 @@ public class MenuEmpleado {
             }
 
         } while (opcion != 3);
+    }
+
+    @Override
+    public void Menu() {
+        System.out.println("\n----- MENU EMPLEADO -----");
+        System.out.println("1. Ver información del empleado");
+        System.out.println("2. Ver zonas que le pretenecen");
+        System.out.println("3. Volver al menú principal");
+        System.out.print("Ingrese una opción: ");
     }
 }

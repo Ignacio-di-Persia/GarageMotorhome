@@ -2,7 +2,7 @@
 package garagemotohome;
 
 import java.util.ArrayList;
-
+ 
 public class Administrador extends Personas {
     private static int contador;
     private final static int prefijoAdmin=1;
